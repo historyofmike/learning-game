@@ -1,5 +1,5 @@
 let questions = [
-  
+
     {
         title: 'krysa',
         alternatives: ['cat', 'fish', 'rat', 'shark'],
@@ -26,7 +26,13 @@ let questions = [
         title: 'ryba',
         alternatives: ['cat', 'puma', 'fish', 'bird'],
         correctAnswer: 2
-    }
+    },
+
+    {
+        title: 'puma',
+        alternatives: ['cat', 'puma', 'fish', 'dog'],
+        correctAnswer: 1
+    },
 ];
 
 
@@ -35,7 +41,7 @@ let app = {
 
         this.currPosition = 0;
         this.score = 0;
-        
+
         // get alternatives
         let alts = document.querySelectorAll('.alternative');
 
@@ -53,7 +59,7 @@ let app = {
         // show first question
         this.showQuestion(questions[this.currPosition]);
     },
-    
+
     showQuestion: function(q) {
 
         // show question title
@@ -62,9 +68,9 @@ let app = {
 
         // show alternatives
         let alts = document.querySelectorAll('.alternative');
-        
+
         alts.forEach(function(element, index){
-            element.textContent = q.alternatives[index];        
+            element.textContent = q.alternatives[index];
         });
     },
 
@@ -132,13 +138,7 @@ let app = {
     }
 
 
-    
+
 };
 
 app.start();
-
-
-
-
-
-
