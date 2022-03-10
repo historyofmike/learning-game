@@ -20,14 +20,14 @@ let questions = [
         correctAnswer: 0
     }
 ];
-
+//This is a test comment Gleb.
 
 let app = {
     start: function() {
 
         this.currPosition = 0;
         this.score = 0;
-        
+
         // get alternatives
         let alts = document.querySelectorAll('.alternative');
 
@@ -45,7 +45,7 @@ let app = {
         // show first question
         this.showQuestion(questions[this.currPosition]);
     },
-    
+
     showQuestion: function(q) {
 
         // show question title
@@ -54,9 +54,9 @@ let app = {
 
         // show alternatives
         let alts = document.querySelectorAll('.alternative');
-        
+
         alts.forEach(function(element, index){
-            element.textContent = q.alternatives[index];        
+            element.textContent = q.alternatives[index];
         });
     },
 
@@ -124,13 +124,7 @@ let app = {
     }
 
 
-    
+
 };
 
 app.start();
-
-
-
-
-
-
