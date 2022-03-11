@@ -13,7 +13,7 @@ function showQuestion(q) {
 
     // selecting by a query
     let alts = document.querySelectorAll('.alternative');
-    
+
     alts.forEach(function(element, index){
         element.textContent = q.alternatives[index];
     });
@@ -21,3 +21,4 @@ function showQuestion(q) {
 
 showQuestion(question);
 
+//this is a test
