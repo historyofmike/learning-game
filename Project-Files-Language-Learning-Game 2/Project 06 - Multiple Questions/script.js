@@ -20,13 +20,13 @@ let questions = [
         correctAnswer: 0
     }
 ];
-
+//Adding a comment
 
 let app = {
     start: function() {
 
         this.currPosition = 0;
-        
+
         // get alternatives
         let alts = document.querySelectorAll('.alternative');
 
@@ -41,7 +41,7 @@ let app = {
         // show current question
         this.showQuestion(questions[this.currPosition]);
     },
-    
+
     showQuestion: function(q) {
 
         // show question title
@@ -50,9 +50,9 @@ let app = {
 
         // show alternatives
         let alts = document.querySelectorAll('.alternative');
-        
+
         alts.forEach(function(element, index){
-            element.textContent = q.alternatives[index];        
+            element.textContent = q.alternatives[index];
         });
     },
 
@@ -86,9 +86,3 @@ let app = {
 };
 
 app.start();
-
-
-
-
-
-
