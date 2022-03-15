@@ -21,4 +21,4 @@ function showQuestion(q) {
 
 showQuestion(question);
 
-//this is a test
+//Comment for class
